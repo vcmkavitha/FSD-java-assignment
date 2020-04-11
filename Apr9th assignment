@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src = "message.js"> </script>
+</head>
+<body>
+<p>My first javascript code</p>
+<script>
+console.log("I’m JavaScript!");
+</script>
+</body>
+</html>
