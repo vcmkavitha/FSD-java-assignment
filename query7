@@ -1,0 +1,22 @@
+In String compare, each and every letter is compared with the other.
+
+var a='world'
+var b='hello'
+var c='two'
+a>b - true
+sinc w is greater than h
+b>c - false
+since h is not greater than t
+
+x='hear'
+y='heer'
+x<y - true
+here, first letter (h) is equal in both
+second letter (e) is equal in both
+third letter (a) is less than (e)
+so x is less than y
+
+d='HELLO'
+e='hello'
+d<e - true
+could see that lower case letter has bigger than upper case.
