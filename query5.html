@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+function Person(first, last,) {
+  this.firstName = first;
+  this.lastName = last;
+  console.log('Emp First Name: ' +first);
+  console.log('Emp Last Name: ' +last);
+}
+Person.prototype.dept = "IT";
+var emp1oyee1 = new Person("Sachin", "T");
+document.getElementById("demo").innerHTML ="The dept of employee1 is " + emp1oyee1.dept; 
+
+</script>
+</body>
+</html>
