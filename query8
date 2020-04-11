@@ -1,0 +1,5 @@
+A JavaScript function can also be defined using an expression.
+A function expression can be stored in a variable:
+var x = function (a, b) {return a * b};
+After a function expression has been stored in a variable, the variable can be used as a function. Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
