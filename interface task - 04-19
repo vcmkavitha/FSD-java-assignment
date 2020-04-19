@@ -1,0 +1,38 @@
+interface I1
+	run();
+interface I2
+	run();
+interface I3
+	delete();
+interface I4
+	addProduct();
+interface I5
+	createUser();
+
+
+1. 
+	class A implements I1,I2
+	{}
+
+	which run() method will be overrided?
+  
+  Ans: run() method will be overriden in both I1 and I2
+  
+  2. class B implements I2,I3,I5
+
+	I4 is extended by I5
+	
+	what methods do we have to override
+  
+  Ans: 
+  3. I5 extends I4,I3,I2 ,  is it possible?
+  Ans: Yes
+  
+  4. use 3rd qn , can we access all the methods of I2,I3,I4 using ref variable of I5
+
+	 class D implements I5
+
+		methods are overrided
+    Ans: Yes
+  
+  
