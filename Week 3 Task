@@ -1,0 +1,57 @@
+1. Can you override a private or static method in Java? 
+No, we cannot override private or static methods in Java
+
+
+2. What do the expression 1.0 / 0.0 will return? 
+infinity. So exception is thrown
+ 
+
+3. char[] chars = new char[] {'\u0097'} o/p if u iterate this code and print?     (will it print if u iterate array or should it be converted) 
+
+
+4. Difference between System.exit() and System.halt() method? 
+System.exit()
+Terminates the currently running Java virtual machine by initiating its shutdown sequence. 
+System.halt()
+Forcibly terminates the currently running Java virtual machine. This method never returns normally.
+
+5. (Integer) 1 == (Integer) 1 but (Integer) 222 != (Integer) 222, why second prints? 
+Integer is a class. So to compare objects you need to use equals instead of ==. With shorter Integer we get an Integer always the same cached instance for values between -128 and 127. So in this case == works for (Integer) 1 == (Integer).
+
+6. System.out.println('j' + 'a' + 'v' + 'a');  
+concatenate all the values.
+
+7. int $_ = 5; o/p 
+
+8. // \u000d System.out.println("comment executed"); what will be o/p? 
+o/p: comment executed.
+The reason for this is that the Java compiler parses the unicode character \u000d as a new line and gets transformed into below:
+// \u000d 
+System.out.println("comment executed");
+
+
+9. unreachable catch block error? usefull links: 
+
+When we are keeping multiple catch blocks, the order of catch blocks must be from most specific to most general ones. i.e sub classes of Exception must come first and super classes later. If we keep super classes first and sub classes later, compiler will show unreachable catch block error.
+
+Map.Entry used for?
+A map entry (key-value pair). The Map.entrySet method returns a collection-view of the map, whose elements are of this class. The only way to obtain a reference to a map entry is from the iterator of this collection-view. These Map.Entry objects are valid only for the duration of the iteration; more formally, the behavior of a map entry is undefined if the backing map has been modified after the entry was returned by the iterator, except through the setValue operation on the map entry.
+
+
+hashmap and hash table
+
+try 
+The first step in constructing an exception handler is to enclose the code that might throw an exception within a try block
+
+catch
+You associate exception handlers with a try block by providing one or more catch blocks directly after the try block. No code can be between the end of the try block and the beginning of the first catch block.
+
+multiple catch
+In Java 7 it was made possible to catch multiple different exceptions in the same catch block. This is also known as multi catch. As you can see, the two exceptions SQLException and IOException are handled in the same way, but you still have to write two individual catch blocks for them
+
+throw 
+The throw keyword in Java is used to explicitly throw an exception from a method or any block of code. We can throw either checked or unchecked exception. The throw keyword is mainly used to throw custom exceptions.
+
+throws
+throws is a keyword in Java which is used in the signature of method to indicate that this method might throw one of the listed type exceptions. The caller to these methods has to handle the exception using a try-catch block.
+
