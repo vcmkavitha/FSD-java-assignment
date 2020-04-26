@@ -80,3 +80,56 @@ List<String> a=new ArrayList();
 		System.out.println(a[i[);
 		}
 		}
+
+
+11.Stud
+	name , mark, id
+
+	u have create a list of student obj
+
+	find who get min mark - print that stud name
+	find who get max mark - print that stud name
+	find who get sum of all mark of all stud
+
+class Student{  
+  int id;  
+  String name;  
+  int marks;  
+  Student(int id,String name,int marks){  
+   this.id=id;  
+   this.name=name;  
+   this.marks=marks;  
+  }  
+}  
+
+
+import java.util.*;  
+ class ArrayList5{  
+ public static void main(String args[]){  
+  
+  Student s1=new Student(101,"Sonoo",50);  
+  Student s2=new Student(102,"Ravi",21);  
+  Student s3=new Student(103,"Hanumat",25);  
+  Student s4=new Student(104,"zzxc",89);  
+  Student s5=new Student(105,"qwer",95);  
+  //creating arraylist  
+  ArrayList<Student> al=new ArrayList<Student>();  
+  al.add(s1);//adding Student class object  
+  al.add(s2);  
+  al.add(s3);  
+  al.add(s4);
+  al.add(s5);
+  //Getting Iterator  
+  Iterator itr=al.iterator();  
+  //traversing elements of ArrayList object  
+  while(itr.hasNext()){  
+    Student st=(Student)itr.next();  
+    System.out.println(st.id+" "+st.name+" "+st.marks);  
+  }  
+  Integer max_score = Collections.max(st.marks);
+  Integer min_score = Collections.min(st.marks);
+  System.out.println("Student with maximum score " +max_score);
+  System.out.println("Student with maximum score " +min_score); 
+		
+ }  
+} 
