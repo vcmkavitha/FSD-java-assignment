@@ -55,3 +55,28 @@ The throw keyword in Java is used to explicitly throw an exception from a method
 throws
 throws is a keyword in Java which is used in the signature of method to indicate that this method might throw one of the listed type exceptions. The caller to these methods has to handle the exception using a try-catch block.
 
+10. String API question
+
+List<String> a=new ArrayList();
+		a.add("hi");
+		a.add("hello");
+		a.add("welcome");
+		a.add("When");
+		a.add("help");
+		a.add("hire");
+		a.add("india");
+		a.add("race");
+		a.add("in");
+		
+		Stream<String> s1=a.stream();
+		List l1=s1.map(x->x.length()).filter(x->x>3).collect(Collectors.toList());
+		System.out.println(l1);
+		
+//print the strings which has length > than 4
+		for(int i=0;i<a.size();i++)
+		{
+		if (a[i].length() > 4 )
+		{
+		System.out.println(a[i[);
+		}
+		}
